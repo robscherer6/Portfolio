@@ -90,18 +90,31 @@ section {
   display: flex;
   flex-direction: column;
   transform: translateY(-50%);
+  .active-btn {
+    background-color: var(--color-secondary) !important;
+    transition: all .4s ease-in-out;
+    i {
+      color: var(--color-white) !important;
+    }
+  }
+  .control {
+    padding: 1rem;
+    cursor: pointer;
+    background-color: var(--color-grey-4);
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .7rem 0;
+    box-shadow: var(--box-shadow-1);
+    i {
+      font-size: 1.2rem;
+      color: var(--color-grey-2);
+      pointer-events: none;
+    }
+  }
 }
 
-.control {
-  padding: 1rem;
-  cursor: pointer;
-  background-color: var(--color-grey-4);
-  width: 55px;
-  height: 55px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: .7rem 0;
-  box-shadow: var(--box-shadow-1);
-}
+
