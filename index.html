@@ -39,25 +39,25 @@
             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             <div class="tab-titles">
-              <p class="tab-links active-link">Skills</p>
-              <p class="tab-links">Experience</p>
-              <p class="tab-links">Education</p>
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('experience')">Experience</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
             </div>
-            <div class="tab-contents">
+            <div class="tab-contents active-tab" id="skills">
               <ul>
                 <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
                 <li><span>Web Development</span><br>Web App Development</li>
                 <li><span>App Development</span><br>Building Android/iOS apps</li>
               </ul>
             </div>
-            <div class="tab-contents">
+            <div class="tab-contents" id="experience">
               <ul>
                 <li><span>01/2023 - Current</span><br>Master's Degree Computer Science at Hood College in Frederick, MD</li>
                 <li><span>Spring 2022</span><br>Hack Reactor Full Stack Bootcamp</li>
                 <li><span>App Development</span><br>Building Android/iOS apps</li>
               </ul>
             </div>
-            <div class="tab-contents">
+            <div class="tab-contents" id="education">
               <ul>
                 <li><span>01/2023 - Current</span><br>M.S. in CS at Hood College</li>
                 <li><span>Spring 2022</span><br>Hack Reactor Full Stack Bootcamp</li>
