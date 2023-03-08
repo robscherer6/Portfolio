@@ -7,7 +7,7 @@
 
 body {
   background-color: #080808;
-  color: #000000;
+  color: #fff;
 }
 
 #header {
@@ -16,6 +16,7 @@ body {
   background-image: url(images/Kiawah.png);
   background-size: cover;
   background-position: center;
+  color: black;
 }
 
 .container {
@@ -40,7 +41,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #fff;
+  color: black;
   text-decoration: none;
   font-size: 18px;
   position: relative;
@@ -365,7 +366,42 @@ form .btn2 {
 }
 
 /* ---------------css for small screens-------------- */
+nav .fas {
+  display: none;
+}
 
 @media only screen and (max-width: 600px) {
-
+  #header{
+    background-image: url(images/Kiawah.png);
+  }
+  .header-text {
+    margin-top: 100%;
+    font-size: 16px;
+  }
+  .header-text h1 {
+    font-size: 30px;
+  }
+  nav .fas {
+    display: block;
+    font-size: 25px;
+  }
+  nav ul {
+    background: #ff004f;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+  }
+  nav ul li {
+    display: block;
+    margin: 25px;
+  }
+  nav ul .fas {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
 }
