@@ -7,16 +7,15 @@
 
 body {
   background-color: #080808;
-  color: #fff;
+  color: #000000;
 }
 
 #header {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
-  background-image: url(images/guysnyc.png);
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: 785px 600px;
+  background-image: url(images/Kiawah.png);
+  background-size: cover;
+  background-position: center;
 }
 
 .container {
@@ -343,4 +342,30 @@ form input, form textarea {
   color: #fff;
   font-size: 18px;
   border-radius: 6px;
+}
+
+form .btn2 {
+  padding: 14px 60px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.copyright {
+  width: 100%;
+  text-align: center;
+  padding: 25px 0;
+  background: #262626;
+  font-weight: 300;
+  margin-top: 20px;
+}
+
+.copyright i {
+  color:#ff004f;
+}
+
+/* ---------------css for small screens-------------- */
+
+@media only screen and (max-width: 600px) {
+
 }
